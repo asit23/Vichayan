@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screenbg">
+
+    <ImageView
+        android:id="@+id/backtointro"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        app:tint="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/elcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Welcome\10Back"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contactedittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/elcome"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:fontFamily="@font/raleway_regular"
+                android:hint="Phone no."
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/passwordedittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/contactedittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:fontFamily="@font/raleway_regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/Signinuser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/passwordedittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="5dp"
+                android:fontFamily="@font/raleway_regular"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/signinProgree"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/passwordedittext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/forgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Signinuser"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway_regular"
+                android:text="Forgot Pasword ?"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/signupagain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Signinuser"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/raleway_regular"
+                android:text="Sign Up"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

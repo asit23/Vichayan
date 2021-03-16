@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screenbg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/register_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/backchal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/creste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backchal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Create Account"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:id="@+id/nameedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/creste"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/thin_border_rectangle"
+                    android:fontFamily="@font/raleway_regular"
+                    android:hint="First"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+
+                <EditText
+                    android:id="@+id/lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/thin_border_rectangle"
+                    android:fontFamily="@font/raleway_regular"
+                    android:hint="Last"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emailsignupedittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/nameedittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:fontFamily="@font/raleway_regular"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/passwordsignupedittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/contactsignupedittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:fontFamily="@font/raleway_regular"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/contactsignupedittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/emailsignupedittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:hint="Contact"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/confirmpasswordtext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/passwordsignupedittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:fontFamily="@font/raleway_regular"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/dobsignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/confirmpasswordtext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/thin_border_rectangle"
+                android:clickable="true"
+                android:drawableRight="@drawable/calendar"
+                android:editable="false"
+                android:fontFamily="@font/raleway_regular"
+                android:hint="Date of Birth"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dobsignup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/raleway_regular"
+                android:gravity="center"
+                android:text="By clicking Sign Up, you agree to our Terms, DataPolicy and Cookie Policy.You may receive SMS notifications from us and can opt out at any time."
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/Signupuser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/info"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="5dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+            <ProgressBar
+                android:id="@+id/signupProgree"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/info"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/signinback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Signupuser"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signinback"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/raleway_regular"
+                android:text="If you already have account with us."
+                android:textColor="#ddd"
+                android:textSize="17dp" />
+        </RelativeLayout>
+    </FrameLayout>
+</ScrollView>

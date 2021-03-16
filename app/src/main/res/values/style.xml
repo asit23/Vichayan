@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="colorOnSurface">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/primary_material_dark</item>
+        <item name="hintTextColor">@color/primary_material_dark</item>
+    </style>
+
+    <style name="MYBottomSheetStyle">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="MyBottomSheetDialogTheme">
+        <item name="bottomSheetStyle">@style/MYBottomSheetStyle</item>
+    </style>
+
+  <!--  <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>-->
+
+</resources>
